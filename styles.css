@@ -137,23 +137,23 @@ img {
 }
 
 .nav-icon::before {
-  content: "";
-  width: 24px;
-  height: 17px;
-  border: 2px solid var(--blue);
-  border-radius: 2px;
-  background: transparent;
+  content: "✉";
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--blue);
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  background: #f4f8fa;
+  border: 1px solid var(--line);
+  border-radius: 50%;
 }
 
 .nav-icon::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-left: 2px solid var(--blue);
-  border-bottom: 2px solid var(--blue);
-  transform: translateY(-2px) rotate(-45deg);
-  transform-origin: center;
+  content: none;
 }
 
 .fee-link {
@@ -735,6 +735,7 @@ img {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  border-radius: 0;
   filter: brightness(1.04) saturate(.88);
 }
 
@@ -1487,16 +1488,9 @@ img {
   }
 
   .nav-icon::before {
-    width: 15px;
-    height: 11px;
-    border-width: 2px;
-  }
-
-  .nav-icon::after {
-    width: 11px;
-    height: 11px;
-    border-width: 2px;
-    transform: translateY(-1px) rotate(-45deg);
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
   }
 
   .fee-link {
