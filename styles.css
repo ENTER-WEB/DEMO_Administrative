@@ -1755,6 +1755,7 @@ img {
 
   .hero h1 {
     font-size: clamp(31px, 7vw, 46px);
+    white-space: normal;
   }
 
   .hero-actions {
@@ -1871,8 +1872,8 @@ img {
   grid-column: 1;
   align-self: center;
   justify-self: start;
-  width: min(720px, 88%);
-  padding: 0 0 8vh clamp(46px, 6.4vw, 104px);
+  width: min(820px, 92%);
+  padding: 8vh 0 4vh clamp(46px, 6.4vw, 104px);
   transform: none;
 }
 
@@ -1880,12 +1881,13 @@ img {
   margin: 0;
   color: #132b43;
   font-family: var(--font-serif);
-  font-size: clamp(38px, 4vw, 60px);
+  font-size: clamp(34px, 3.35vw, 52px);
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.5;
   letter-spacing: .04em;
   writing-mode: horizontal-tb;
   min-height: 0;
+  white-space: nowrap;
 }
 
 .hero-lead {
